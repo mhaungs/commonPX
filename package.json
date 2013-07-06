@@ -1,0 +1,17 @@
+{
+  "name": "commonPX",
+  "description": "Common javascript modules for PolyXpress",
+  "version": "0.0.3",
+  "author": {
+    "name": "Michael Haungs",
+    "email": "mhaungs@calpoly.edu",
+    "url": "http://www.csc.calpoly.edu/~mhaungs"
+  },
+  "keywords": [
+    "polyxpress",
+    "common"
+  ],
+  "homepage": "http://pxDev.cfapps.io",
+  "license": "BSD",
+  "main": "commonPX"
+}
