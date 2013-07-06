@@ -2,7 +2,7 @@
   "name": "commonPX",
   "version": "0.0.3",
   "ignore": [
-    "package.json",
+	"package.json",
 	"components"
   ],
   "dependencies": {
