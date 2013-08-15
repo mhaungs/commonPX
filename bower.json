@@ -1,6 +1,6 @@
 {
   "name": "commonPX",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "ignore": [
 	"package.json",
 	"components"
@@ -9,7 +9,8 @@
     "bootstrap": "http://twitter.github.io/bootstrap/assets/bootstrap.zip",
     "jquery-2.0.2.min": "http://code.jquery.com/jquery-2.0.2.min.js",
     "mhLog": "git@github.com:mhaungs/mhlog.git",
-    "jquery.mobile": "/Users/mhaungs/Work/Developer/WebModules/jquery.mobile-1.3.1",
+    "jquery.mobile-1.3.2.min.js": "http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js",
+    "jquery.mobile-1.3.2.min.css": "http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css",
     "inject": "latest"
   }
 }
