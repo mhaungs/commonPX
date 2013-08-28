@@ -49,6 +49,7 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
             },
             dist: {
+				// PUT YOUR FILES HERE!!
                 files: {
                     'src/js/pointFinder.min.js': ['src/js/pointFinder.js'],
                     'src/js/pointFinderGPS.min.js': ['src/js/pointFinderGPS.js'],
@@ -58,6 +59,7 @@ module.exports = function(grunt) {
         },
         jshint: {
             // define the files to lint
+			// PUT YOUR FILES HERE!!
             files: ['gruntfile.js', "src/js/pointFinderGPS.js", "src/js/pointFinder.js"],
             // configure JSHint (http://www.jshint.com/docs/)
             options: {
