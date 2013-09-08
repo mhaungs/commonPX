@@ -14,6 +14,13 @@ module.exports = function(grunt) {
                     },
                     {
                         expand: true,
+                        cwd: 'bower_components/mhGeo/',
+                        src: ['mhGeo.js'],
+                        dest: 'src/lib/',
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true,
                         cwd: 'bower_components/inject/dist/',
                         src: ['inject*.js'],
                         dest: 'src/lib/',
@@ -49,17 +56,18 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
             },
             dist: {
-				// PUT YOUR FILES HERE!!
+                // PUT YOUR FILES HERE!!
                 files: {
                     'src/js/pointFinder.min.js': ['src/js/pointFinder.js'],
                     'src/js/pointFinderGPS.min.js': ['src/js/pointFinderGPS.js'],
-                    'src/lib/mhlog.min.js': ['src/lib/mhlog.js']
+                    'src/lib/mhlog.min.js': ['src/lib/mhlog.js'],
+                    'src/lib/mhGeo.min.js': ['src/lib/mhGeo.js']
                 }
             }
         },
         jshint: {
             // define the files to lint
-			// PUT YOUR FILES HERE!!
+            // PUT YOUR FILES HERE!!
             files: ['gruntfile.js', "src/js/pointFinderGPS.js", "src/js/pointFinder.js"],
             // configure JSHint (http://www.jshint.com/docs/)
             options: {

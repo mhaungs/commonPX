@@ -1,7 +1,7 @@
 {
     "name": "commonPX",
     "description": "Common javascript modules for PolyXpress",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "author": {
         "name": "Michael Haungs",
         "email": "mhaungs@calpoly.edu",
