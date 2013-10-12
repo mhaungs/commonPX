@@ -90,6 +90,12 @@ module.exports = function(grunt) {
                 options: {
                     stdout: true
                 }
+            },
+            tag: {
+                command: 'git tag -a -f <%=pkg.version %> -m "new commonPx tag"; git push origin <%=pkg.version %>',
+                options: {
+                    stdout: true
+                }
             }
         },
         watch: {
