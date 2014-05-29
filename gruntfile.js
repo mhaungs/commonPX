@@ -43,7 +43,7 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         cwd: 'bower_components/jquery-2.0.2.min.map/',
-                        src: ['jquery-2.0.2.min.map'],
+                        src: ['index.map'],
                         dest: 'src/lib/jquery.min',
                         filter: 'isFile'
                     },
@@ -60,7 +60,10 @@ module.exports = function(grunt) {
         uglify: {
             options: {
                 // the banner is inserted at the top of the output
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+                banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n',
+				mangle: {
+					except: ['require', 'module', 'exports']
+				}
             },
             dist: {
                 // PUT YOUR FILES HERE!!
@@ -104,6 +107,11 @@ module.exports = function(grunt) {
                     stdout: true
                 }
             }
+			docs: {
+				command: 'jsdoc src/js/peDesignerController.js src/js/peDesignerModel.js src/js/peDesignerServer.js --destination docs',
+				options: {
+					stdout: true
+				}
         },
         watch: {
             files: ['<%=jshint.files %>'],
@@ -125,4 +133,6 @@ module.exports = function(grunt) {
     // Register building task
     grunt.registerTask('update', ['shell:bower', 'shell:npm', 'copy', 'jshint', 'uglify']);
 
+    // Register documentation task
+    grunt.registerTask('docs', ['shell:docs']);
 };
