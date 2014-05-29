@@ -1,6 +1,6 @@
 {
     "name": "commonPX",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "ignore": [
         "package.json",
         "components"
@@ -8,6 +8,7 @@
     "dependencies": {
         "bootstrap": "http://getbootstrap.com/2.3.2/assets/bootstrap.zip",
         "jquery-2.0.2.min": "http://code.jquery.com/jquery-2.0.2.min.js",
+        "jquery-2.0.2.min.map": "http://code.jquery.com/jquery-2.0.2.min.map",
         "mhLog": "git@github.com:mhaungs/mhlog.git",
         "mhGeo": "git@github.com:mhaungs/mhGeo.git",
         "inject": "latest"
