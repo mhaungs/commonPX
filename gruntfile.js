@@ -34,23 +34,19 @@ module.exports = function(grunt) {
                         filter: 'isFile'
                     },
                     {
-                        expand: true,
-                        cwd: 'bower_components/jquery-2.0.2.min/',
-                        src: ['index.js'],
+                        src: ['bower_components/jquery-2.0.2.min/index.js'],
                         dest: 'src/lib/jquery.min/jquery-2.0.2.min.js',
                         filter: 'isFile'
                     },
                     {
-                        expand: true,
-                        cwd: 'bower_components/jquery-2.0.2.min.map/',
-                        src: ['index.map'],
+                        src: ['bower_components/jquery-2.0.2.min.map/index.map'],
                         dest: 'src/lib/jquery.min/jquery-2.0.2.min.map',
                         filter: 'isFile'
                     },
                     {
                         expand: true,
                         cwd: 'bower_components/commonPX/jquery.mobile/',
-                        src: ['images/*', '*.min.css', '*.min.js'],
+                        src: ['images/*', '*.min.css', '*.min.js', '*.min.map'],
                         dest: 'src/lib/jquery.mobile.min',
                         filter: 'isFile'
                     }
@@ -106,12 +102,13 @@ module.exports = function(grunt) {
                 options: {
                     stdout: true
                 }
-            }
+            },
 			docs: {
 				command: 'jsdoc src/js/peDesignerController.js src/js/peDesignerModel.js src/js/peDesignerServer.js --destination docs',
 				options: {
 					stdout: true
 				}
+			}
         },
         watch: {
             files: ['<%=jshint.files %>'],
