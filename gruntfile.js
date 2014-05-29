@@ -37,14 +37,14 @@ module.exports = function(grunt) {
                         expand: true,
                         cwd: 'bower_components/jquery-2.0.2.min/',
                         src: ['index.js'],
-                        dest: 'src/lib/jquery.min',
+                        dest: 'src/lib/jquery.min/jquery-2.0.2.min.js',
                         filter: 'isFile'
                     },
                     {
                         expand: true,
                         cwd: 'bower_components/jquery-2.0.2.min.map/',
                         src: ['index.map'],
-                        dest: 'src/lib/jquery.min',
+                        dest: 'src/lib/jquery.min/jquery-2.0.2.min.map',
                         filter: 'isFile'
                     },
                     {
